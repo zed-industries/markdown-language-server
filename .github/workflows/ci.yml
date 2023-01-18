@@ -33,17 +33,17 @@ jobs:
       - name: Create binaries
         run: script/build
 
-      - name: Upload aarch64 binaries to workflow run if main branch
+      - name: Upload aarch64 binaries to workflow run
         uses: actions/upload-artifact@v2
         with:
-          name: json-language-server-darwin-aarch64.gz
-          path: bin/json-language-server-darwin-aarch64.gz
+          name: markdown-language-server-darwin-aarch64.gz
+          path: bin/markdown-language-server-darwin-aarch64.gz
 
-      - name: Upload x86_64 binaries to workflow run if main branch
+      - name: Upload x86_64 binaries to workflow run
         uses: actions/upload-artifact@v2
         with:
-          name: json-language-server-darwin-x86_64.gz
-          path: bin/json-language-server-darwin-x86_64.gz
+          name: markdown-language-server-darwin-x86_64.gz
+          path: bin/markdown-language-server-darwin-x86_64.gz
 
       - uses: softprops/action-gh-release@v1
         name: Upload binaries to release if release tag
