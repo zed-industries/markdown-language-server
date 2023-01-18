@@ -12,8 +12,8 @@ rm -rf bin
 mkdir bin
 
 echo "Moving binaries to bin"
-mv node_modules/vscode-markdown-languageserver/vscode-markdown-languageserver-arm64 bin/markdown-language-server-darwin-aarch64
-mv node_modules/vscode-markdown-languageserver/vscode-markdown-languageserver-x64 bin/markdown-language-server-darwin-x86_64
+mv node_modules/vscode-markdown-languageserver/main-arm64 bin/markdown-language-server-darwin-aarch64
+mv node_modules/vscode-markdown-languageserver/main-x64 bin/markdown-language-server-darwin-x86_64
 
 gzip bin/markdown-language-server-darwin-aarch64
 gzip bin/markdown-language-server-darwin-x86_64
