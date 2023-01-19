@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "vscode-languageserver": "^8.0.2",
         "vscode-markdown-languageserver": "0.2.0-alpha.4"
     },
     "devDependencies": {
